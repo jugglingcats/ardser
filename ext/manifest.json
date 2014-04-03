@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+
+    "name": "Arduino and Babylon",
+    "description": "Shows interaction with Babylon scene using MPU6050 accelerometer",
+    "version": "1.0",
+    "app": {
+        "launch": {
+            "local_path": "scene.html"
+        }
+    },
+    "app": {
+        "background": {
+            "scripts": [
+                "background.js"
+            ]
+        }
+    },
+    "permissions": [
+        "serial",
+        {
+            "fileSystem": ["write"]
+        }
+    ]
+}
